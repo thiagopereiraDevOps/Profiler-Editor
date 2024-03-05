@@ -1,0 +1,16 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+ 
+  <p>
+    <label>Primeiro Nome: </label>
+    <input type="text" name="firstName" formControlName="firstName">
+  </p>
+  <p>
+    <label>Sobrenome: </label>
+    <input type="text" name="lastName" formControlName="lastName">
+  </p>
+ 
+  <button type="submit">Enviar</button>
+ 
+</form>
+
+<router-outlet />
